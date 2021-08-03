@@ -1,0 +1,7 @@
+Manifest-Version: 1.0
+Created-By: IntelliJ IDEA
+Built-By: Ilya
+Build-Jdk: 11.0.1
+Class-Path: javax.servlet-api-4.0.1.jar jstl-1.2.jar postgresql-42.2.19.
+ jar checker-qual-3.5.0.jar
+
