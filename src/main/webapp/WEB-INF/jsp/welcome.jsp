@@ -21,6 +21,7 @@
 <div class="main">
     ${sessionScope.roles1}
     <myTags:header login="${sessionScope.login}"
+
                    mainLink="${contpath}welcome.jhtml"
                    userListLink="${contpath}listUsers.jhtml"
                    logoutLink="${contpath}logout.jhtml"
