@@ -35,29 +35,24 @@ public class Access implements Filter {
             filterChain.doFilter(req, resp);
         } else {
             ArrayList<Role> roles = (ArrayList<Role>) session.getAttribute("roles");
-            roles.forEach(role -> {if(!role.getName().equals("admin")){
-                try {
-                    resp.sendRedirect(req.getContextPath() + "/welcome.jhtml");
-                } catch (IOException e) {
-                    e.printStackTrace();
+            roles.forEach(role -> {
+                if (!role.getName().equals("admin")) {
+                    try {
+                        resp.sendRedirect(req.getContextPath() + "/welcome.jhtml");
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    try {
+                        filterChain.doFilter(req, resp);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    } catch (ServletException e) {
+                        e.printStackTrace();
+                    }
                 }
-            } else {
-                try {
-                    filterChain.doFilter(req, resp);
-                } catch (IOException e) {
-                    e.printStackTrace();
-                } catch (ServletException e) {
-                    e.printStackTrace();
-                }
-            }
 
             });
-            System.out.println("roles");
-//            if (!roles.equals("admin")) {
-//                resp.sendRedirect(req.getContextPath() + "/welcome.jhtml");
-//            } else {
-//                filterChain.doFilter(req, resp);
-//            }
         }
     }
 
