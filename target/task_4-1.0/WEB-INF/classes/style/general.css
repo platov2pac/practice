@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+button {
+    display: block;
+    border: 1px solid black;
+    background: #ffa580;
+    /*margin: 0 auto;*/
+    line-height: 28pt;
+    padding: 0 20px;
+    letter-spacing: 2px;
+    box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+    cursor: pointer;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 1);
+    color: white;
+}
+
+input {
+    display: block;
+    width: 100%;
+    font-size: 14pt;
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 28pt;
+    margin-bottom: 28pt;
+    border: none;
+    border-bottom: 5px solid black;
+    background: #f8f4e5;
+    min-width: 250px;
+    color: black;
+    padding-left: 5px;
+    outline: none;
+}
+
+body {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg");
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+header {
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5%;
+    align-items: center;
+}
+
+footer {
+    border-top: 2px solid black;
+    height: 100px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    min-height: 100%;
+    background: #f8f4e5;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    box-shadow: 15px 0 1px #ffa580, 15px 0 1px 2px black;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.user-logout {
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+p {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20pt;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+
+}
