@@ -9,9 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="подправил роли, фильтры и тд&#10;нужно доделать теги">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="подправил роли, фильтры и тд&#10;нужно доделать теги frg" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -334,7 +332,7 @@
       <workItem from="1627999753949" duration="1042000" />
       <workItem from="1628055978939" duration="9708000" />
       <workItem from="1628069787096" duration="1294000" />
-      <workItem from="1628071804392" duration="1217000" />
+      <workItem from="1628071804392" duration="1565000" />
     </task>
     <task id="LOCAL-00001" summary="подправил роли, фильтры и тд&#10;нужно доделать теги + get...()">
       <created>1628068192698</created>
@@ -364,7 +362,49 @@
       <option name="project" value="LOCAL" />
       <updated>1628071419423</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="подправил роли, фильтры и тд&#10;нужно доделать теги">
+      <created>1628075838484</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1628075838484</updated>
+    </task>
+    <task id="LOCAL-00006" summary="подправил роли, фильтры и тд&#10;нужно доделать теги">
+      <created>1628075871031</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1628075871031</updated>
+    </task>
+    <task id="LOCAL-00007" summary="подправил роли, фильтры и тд&#10;нужно доделать теги">
+      <created>1628076010191</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1628076010191</updated>
+    </task>
+    <task id="LOCAL-00008" summary="подправил роли, фильтры и тд&#10;нужно доделать теги frg">
+      <created>1628076030221</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1628076030221</updated>
+    </task>
+    <task id="LOCAL-00009" summary="подправил роли, фильтры и тд&#10;нужно доделать теги frg">
+      <created>1628076083795</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1628076083795</updated>
+    </task>
+    <task id="LOCAL-00010" summary="подправил роли, фильтры и тд&#10;нужно доделать теги frg">
+      <created>1628076151990</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1628076151990</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -385,7 +425,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="подправил роли, фильтры и тд&#10;нужно доделать теги + get...()" />
     <MESSAGE value="подправил роли, фильтры и тд&#10;нужно доделать теги" />
-    <option name="LAST_COMMIT_MESSAGE" value="подправил роли, фильтры и тд&#10;нужно доделать теги" />
+    <MESSAGE value="подправил роли, фильтры и тд&#10;нужно доделать теги frg" />
+    <option name="LAST_COMMIT_MESSAGE" value="подправил роли, фильтры и тд&#10;нужно доделать теги frg" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
