@@ -14,8 +14,6 @@ import java.util.ArrayList;
 public class Access implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-
-
     }
 
 
@@ -54,7 +52,7 @@ public class Access implements Filter {
             }
 
             });
-
+            System.out.println("roles");
 //            if (!roles.equals("admin")) {
 //                resp.sendRedirect(req.getContextPath() + "/welcome.jhtml");
 //            } else {
