@@ -18,20 +18,6 @@ public class RoleDAOImpl implements RoleDAO {
         return null;
     }
 
-//    @Override
-//    public ResultSet getIdRoleByName(String roleName) {
-//        PreparedStatement preparedStatement = null;
-//        try {
-//            preparedStatement = connection.prepareStatement(
-//                    "SELECT r.id FROM roles r WHERE r.name = ?"
-//            );
-//            preparedStatement.setString(1, roleName);
-//            return preparedStatement.executeQuery();
-//        } catch (SQLException e) {
-//            e.printStackTrace();
-//        }
-//        return null;
-//    }
 
     @Override
     public ResultSet getRoleByUserId(int userId) throws SQLException {

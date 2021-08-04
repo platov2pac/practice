@@ -44,15 +44,23 @@
                     </c:if>
                     <input type="text" name="email" value="${user.email}" placeholder="Email">
                     <input type="date" name="dob" value="${user.dob}" placeholder="Date of birthday">
-<%--                    <select name="role">--%>
-<%--                        <option disabled>Выберите роль</option>--%>
-<%--                        <c:if test="${user.role=='admin'}">--%>
-<%--                            <option value="admin">admin</option>--%>
-<%--                        </c:if>--%>
-<%--                        <option value="user">user</option>--%>
-<%--                    </select>--%>
-                    <p><input type="checkbox" name="role" value="admin"> Admin</p>
-                    <p><input type="checkbox" name="role" value="user"> User</p>
+                    <%--                    <select name="role">--%>
+                    <%--                        <option disabled>Выберите роль</option>--%>
+                    <%--                        <c:if test="${user.role=='admin'}">--%>
+                    <%--                            <option value="admin">admin</option>--%>
+                    <%--                        </c:if>--%>
+                    <%--                        <option value="user">user</option>--%>
+                    <%--                    </select>--%>
+                    <p><input type="checkbox" name="role" value="admin"
+                    <c:forEach var="role" items="${user.role}">
+                    <c:if test="${role.name=='admin'}"> checked=checked </c:if>
+                    </c:forEach>
+                    > Admin</p>
+                    <p><input type="checkbox" name="role" value="user"
+                    <c:forEach var="role" items="${user.role}">
+                    <c:if test="${role.name=='user'}"> checked=checked </c:if>
+                    </c:forEach>
+                    > User</p>
                 </label>
                 <button type="submit" <c:if test="${loginUser!=null}"> name="loginUser" value="${loginUser}"</c:if>>
                     Внести изменения

@@ -1,11 +1,14 @@
 package web.filter;
 
+import dto.Role;
+
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
 
 @WebFilter(filterName = "Access")
 public class Access implements Filter {
@@ -31,12 +34,30 @@ public class Access implements Filter {
         if (isLoginURL || isEditUserPasswordURL || isLogoutURL || isWelcomeURL) {
             filterChain.doFilter(req, resp);
         } else {
-            String role = (String) session.getAttribute("role");
-            if (!role.equals("admin")) {
-                resp.sendRedirect(req.getContextPath() + "/welcome.jhtml");
+            ArrayList<Role> roles = (ArrayList<Role>) session.getAttribute("roles");
+            roles.forEach(role -> {if(!role.getName().equals("admin")){
+                try {
+                    resp.sendRedirect(req.getContextPath() + "/welcome.jhtml");
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
             } else {
-                filterChain.doFilter(req, resp);
+                try {
+                    filterChain.doFilter(req, resp);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (ServletException e) {
+                    e.printStackTrace();
+                }
             }
+
+            });
+
+//            if (!roles.equals("admin")) {
+//                resp.sendRedirect(req.getContextPath() + "/welcome.jhtml");
+//            } else {
+//                filterChain.doFilter(req, resp);
+//            }
         }
     }
 

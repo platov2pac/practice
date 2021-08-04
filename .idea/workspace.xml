@@ -5,9 +5,32 @@
       <artifact name="task_5:war exploded" />
     </artifacts-to-build>
   </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/task_5_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/task_5_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/task_5_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/task_5_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/87e903c6-5771-44e7-a804-e4a2e2445c24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/87e903c6-5771-44e7-a804-e4a2e2445c24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/RoleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/RoleDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/filter/Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/filter/Access.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/EditUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/servlet/EditUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dto/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dto/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/META-INF/MANIFEST.MF" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -115,6 +138,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
     <option name="FILTER_WARNINGS" value="false" />
@@ -123,8 +149,15 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectId" id="1oYQnYwKDWhUM5rM3EUEjJGQojE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -147,18 +180,6 @@
       <recent name="D:\practice\servletTasks\task_4(mvn)\src\main" />
       <recent name="D:\practice\servletTasks\task_1\web\WEB-INF" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration name="Tomcat 9.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0" ALTERNATIVE_JRE_ENABLED="false">
@@ -198,6 +219,21 @@
         </SHUTDOWN>
       </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
           <option name="USE_DEFAULT" value="true" />
@@ -255,6 +291,7 @@
       </serviceView>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -308,11 +345,26 @@
       <workItem from="1627914356855" duration="714000" />
       <workItem from="1627969635447" duration="253000" />
       <workItem from="1627970806135" duration="14289000" />
+      <workItem from="1627997716653" duration="1184000" />
+      <workItem from="1627999397758" duration="257000" />
+      <workItem from="1627999753949" duration="1042000" />
+      <workItem from="1628055978939" duration="8113000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -320,6 +372,8 @@
         <watch expression="req.getParameterValues(&quot;role&quot;)" language="JAVA" />
         <watch expression="user.getRoleName().split(&quot; &quot;)" language="JAVA" />
         <watch expression="roles" language="JAVA" />
+        <watch expression="user.getRoleName().split(&quot; &quot;)" language="JAVA" />
+        <watch expression="userService.findAll()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

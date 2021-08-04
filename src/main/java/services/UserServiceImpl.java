@@ -7,9 +7,7 @@ import dto.User;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class UserServiceImpl implements UserService {
     private UserDAO userDAO = new UserDAOImpl();
@@ -146,7 +144,7 @@ public class UserServiceImpl implements UserService {
         ResultSet newUser = userDAO.findByLogin(user.getLogin());
         if (newUser != null) {
             while (newUser.next()) {
-                user.getRole().forEach(role -> {
+                user.getRoles().forEach(role -> {
                     try {
                         usersRolesDAO.createRelation(newUser.getInt(1), role.getId());
                     } catch (SQLException e) {

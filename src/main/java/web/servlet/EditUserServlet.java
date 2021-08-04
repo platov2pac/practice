@@ -4,7 +4,6 @@ import dto.Role;
 import dto.User;
 import services.ServiceFactory;
 import services.UserService;
-import services.UserServiceImpl;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,7 +15,6 @@ import java.io.IOException;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 
 @WebServlet("/edituser.jhtml")
 public class EditUserServlet extends HttpServlet {

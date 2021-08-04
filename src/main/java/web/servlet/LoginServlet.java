@@ -42,7 +42,7 @@ public class LoginServlet extends HttpServlet {
         if (user != null) {
             HttpSession session = req.getSession();
             session.setAttribute("login", user.getLogin());
-            session.setAttribute("roles", user.getRole());
+            session.setAttribute("roles", user.getRoles());
             resp.sendRedirect(req.getContextPath() + "/welcome.jhtml");
         } else {
             req.setAttribute("login", login);

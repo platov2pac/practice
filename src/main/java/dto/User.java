@@ -9,22 +9,22 @@ public class User {
     private int id;
     private String login;
     private String password;
-    private ArrayList<Role> role;
+    private List<Role> roles;
     private String email;
     private String dob;
 
-    public User(String login, String password, ArrayList<Role> role, String email, String dob) {
+    public User(String login, String password, List<Role> roles, String email, String dob) {
         this.login = login;
         this.password = password;
-        this.role = role;
+        this.roles = roles;
         this.email = email;
         this.dob = dob;
     }
 
-    public User(int id, String login, ArrayList<Role> role, String email, String dob) {
+    public User(int id, String login, List<Role> roles, String email, String dob) {
         this.id = id;
         this.login = login;
-        this.role = role;
+        this.roles = roles;
         this.email = email;
         this.dob = dob;
     }
@@ -37,45 +37,45 @@ public class User {
         this.id = id;
     }
 
-    public User(int id, String login, String password, ArrayList<Role> role, String email, String dob) {
+    public User(int id, String login, String password, List<Role> roles, String email, String dob) {
         this.id = id;
         this.login = login;
         this.password = password;
-        this.role = role;
+        this.roles = roles;
         this.email = email;
         this.dob = dob;
     }
 
-    public User(String login, ArrayList<Role> role, String email, String dob) {
+    public User(String login, List<Role> roles, String email, String dob) {
         this.login = login;
-        this.role = role;
+        this.roles = roles;
         this.email = email;
         this.dob = dob;
     }
 
-    public User(String login, String password, ArrayList<Role> role) {
+    public User(String login, String password, List<Role> roles) {
         this.login = login;
         this.password = password;
-        this.role = role;
+        this.roles = roles;
     }
 
-    public User(String login, ArrayList<Role> role) {
+    public User(String login, List<Role> roles) {
         this.login = login;
-        this.role = role;
+        this.roles = roles;
     }
 
-    public ArrayList<Role> getRole() {
-        return role;
+    public List<Role> getRoles() {
+        return roles;
     }
 
     public String getRoleName() {
-        return role.stream()
+        return roles.stream()
                 .map(String::valueOf)
                 .collect(Collectors.joining(" "));
     }
 
-    public void setRole(ArrayList<Role> role) {
-        this.role = role;
+    public void setRoles(ArrayList<Role> roles) {
+        this.roles = roles;
     }
 
     public String getLogin() {

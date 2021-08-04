@@ -8,8 +8,8 @@
         <url-pattern>*.jhtml</url-pattern>
     </filter-mapping>
 
-<!--    <filter-mapping>-->
-<!--        <filter-name>Access</filter-name>-->
-<!--        <url-pattern>*.jhtml</url-pattern>-->
-<!--    </filter-mapping>-->
+    <filter-mapping>
+        <filter-name>Access</filter-name>
+        <url-pattern>*.jhtml</url-pattern>
+    </filter-mapping>
 </web-app>
