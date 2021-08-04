@@ -46,17 +46,17 @@
             </tr>
             </thead>
             <tbody>
-            <c:forEach var="user" items="${requestScope.users}">
+            <c:forEach var="user" items="${users}">
                 <tr>
                     <td>${user.getLogin()}</td>
 
                     <td>
-                        <c:forEach var="roleName" items=" ${user.getRole()}">
-                            ${roleName}
+                        <c:forEach var="role" items="${user.roles}">
+                            ${role.name}
                         </c:forEach>
                     </td>
-                    <td>${user.getEmail()}</td>
-                    <td>${user.getDob()}</td>
+                    <td>${user.email}</td>
+                    <td>${user.dob}</td>
                     <td><a href="${contpath}edituser.jhtml?loginUser=${user.getLogin()}">
                         <span class="material-icons" style="color: black">create</span></a>
                         <a href="${contpath}deleteUser.jhtml?deletableLogin=${user.getLogin()}">
