@@ -9,17 +9,13 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Welcome</title>
-    <c:url var="contpath" value="/"/>
-    <link rel="stylesheet" href="${contpath}style/general.css"/>
-    <link rel="stylesheet" href="${contpath}style/welcome.css"/>
-</head>
+<myTags:head namePage="welcome"/>
 <body>
 
 <div class="main">
     ${sessionScope.roles1}
     <myTags:header login="${sessionScope.login}"
+
                    mainLink="${contpath}welcome.jhtml"
                    userListLink="${contpath}listUsers.jhtml"
                    logoutLink="${contpath}logout.jhtml"

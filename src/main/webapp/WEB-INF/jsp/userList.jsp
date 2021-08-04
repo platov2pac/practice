@@ -10,13 +10,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Users List</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <c:url var="contpath" value="/"/>
-    <link rel="stylesheet" href="${contpath}style/general.css"/>
-    <link rel="stylesheet" href="${contpath}style/userList.css"/>
-</head>
+<myTags:head namePage="userList"/>
 <body>
 <div class="main">
     <myTags:header login="${login}"

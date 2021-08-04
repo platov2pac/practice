@@ -9,12 +9,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Edit</title>
-    <c:url var="contpath" value="/"/>
-    <link rel="stylesheet" href="${contpath}style/general.css"/>
-    <link rel="stylesheet" href="${contpath}style/editUser.css"/>
-</head>
+<myTags:head namePage="editUser"/>
 <body>
 <div class="main">
     <myTags:header login="${login}"
@@ -44,20 +39,14 @@
                     </c:if>
                     <input type="text" name="email" value="${user.email}" placeholder="Email">
                     <input type="date" name="dob" value="${user.dob}" placeholder="Date of birthday">
-                    <%--                    <select name="role">--%>
-                    <%--                        <option disabled>Выберите роль</option>--%>
-                    <%--                        <c:if test="${user.role=='admin'}">--%>
-                    <%--                            <option value="admin">admin</option>--%>
-                    <%--                        </c:if>--%>
-                    <%--                        <option value="user">user</option>--%>
-                    <%--                    </select>--%>
+
                     <p><input type="checkbox" name="role" value="admin"
-                    <c:forEach var="role" items="${user.role}">
+                    <c:forEach var="role" items="${user.roles}">
                     <c:if test="${role.name=='admin'}"> checked=checked </c:if>
                     </c:forEach>
                     > Admin</p>
                     <p><input type="checkbox" name="role" value="user"
-                    <c:forEach var="role" items="${user.role}">
+                    <c:forEach var="role" items="${user.roles}">
                     <c:if test="${role.name=='user'}"> checked=checked </c:if>
                     </c:forEach>
                     > User</p>

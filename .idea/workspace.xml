@@ -9,7 +9,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="подправил роли, фильтры и тд&#10;нужно доделать теги frg" />
+    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="подправил роли, фильтры и тд&#10;нужно доделать теги frg">
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/head.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/filter/Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/filter/Access.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userList.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/editUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/editUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/filter/Access.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/filter/Access.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/editUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/editUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/filter/Access.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/filter/Access.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/editUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/editUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/welcome.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,16 +128,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jsp File" />
         <option value="CSS File" />
         <option value="Tag Library Descriptor" />
         <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
@@ -140,6 +165,7 @@
     <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -424,9 +450,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="подправил роли, фильтры и тд&#10;нужно доделать теги + get...()" />
-    <MESSAGE value="подправил роли, фильтры и тд&#10;нужно доделать теги" />
     <MESSAGE value="подправил роли, фильтры и тд&#10;нужно доделать теги frg" />
-    <option name="LAST_COMMIT_MESSAGE" value="подправил роли, фильтры и тд&#10;нужно доделать теги frg" />
+    <MESSAGE value="подправил роли, фильтры и тд&#10;нужно доделать теги" />
+    <option name="LAST_COMMIT_MESSAGE" value="подправил роли, фильтры и тд&#10;нужно доделать теги" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="myTags" tagdir="/WEB-INF/tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: Ilya
@@ -8,29 +9,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>Login</title>
-    <c:url var="contpath" value="/"/>
-    <link rel="stylesheet" href="${contpath}style/general.css"/>
-    <link rel="stylesheet" href="${contpath}style/login.css"/>
-
-    <c:if test="${param.authFailed}">
-        <style>
-            input {
-                border-bottom: 5px solid rgba(250, 0, 0, 0.73);
-                color: rgba(250, 0, 0, 0.73);
-            }
-
-            input::placeholder {
-                color: rgba(250, 0, 0, 0.73);
-            }
-
-            input:focus {
-                border-bottom: 5px solid rgba(250, 0, 0, 1);
-            }
-        </style>
-    </c:if>
-</head>
+<myTags:head namePage="login"/>
 <body>
 <div class="loginForm">
     <div class="signup">
