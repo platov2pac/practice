@@ -77,11 +77,13 @@
 <!--            <scope>provided</scope>-->
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
         <dependency>
-            <groupId>org.mybatis.spring.boot</groupId>
-            <artifactId>mybatis-spring-boot-starter</artifactId>
-            <version>2.2.0</version>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>3.5.6</version>
         </dependency>
+
 
 
     </dependencies>

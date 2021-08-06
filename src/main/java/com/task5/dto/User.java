@@ -13,6 +13,9 @@ public class User {
     private String email;
     private String dob;
 
+    public User() {
+    }
+
     public User(String login, String password, List<Role> roles, String email, String dob) {
         this.login = login;
         this.password = password;

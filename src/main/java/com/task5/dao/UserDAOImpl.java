@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 public class UserDAOImpl implements UserDAO {
 
@@ -14,9 +15,10 @@ public class UserDAOImpl implements UserDAO {
     private Connection connection = userStorage.getConnection();
 
     @Override
-    public ResultSet findAll() throws SQLException {
-        PreparedStatement preparedStatement = connection.prepareStatement("select * from users");
-        return preparedStatement.executeQuery();
+    public List<User> findAll() throws SQLException {
+//        PreparedStatement preparedStatement = connection.prepareStatement("select * from users");
+//        return preparedStatement.executeQuery();
+        return null;
     }
 
     @Override

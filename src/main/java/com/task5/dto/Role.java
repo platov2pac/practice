@@ -4,12 +4,15 @@ public class Role {
     private int id;
     private String name;
 
+    public Role() {
+    }
+
     public Role(String name) {
         this.name = name;
-        if(name.equals("admin")){
+        if (name.equals("admin")) {
             this.id = 1;
         }
-        if(name.equals("user")){
+        if (name.equals("user")) {
             this.id = 2;
         }
     }

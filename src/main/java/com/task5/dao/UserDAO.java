@@ -4,9 +4,10 @@ import com.task5.dto.User;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 public interface UserDAO {
-    ResultSet findAll() throws SQLException;
+    List<User> findAll() throws SQLException;
 
     ResultSet findByLogin(String login) throws SQLException;
 

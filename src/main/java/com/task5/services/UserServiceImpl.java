@@ -3,6 +3,8 @@ package com.task5.services;
 import com.task5.dao.*;
 import com.task5.dto.Role;
 import com.task5.dto.User;
+import com.task5.storage.ConnectMyBatis;
+import org.apache.ibatis.session.SqlSession;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -14,6 +16,7 @@ public class UserServiceImpl implements UserService {
     private RoleDAO roleDAO = new RoleDAOImpl();
     private UsersRolesDAO usersRolesDAO = new UsersRolesDAOImpl();
     private static UserServiceImpl instance = new UserServiceImpl();
+    private SqlSession sqlSession = ConnectMyBatis.getSqlSession();
 
     private UserServiceImpl() {
     }
@@ -24,31 +27,35 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public List<User> findAll() throws SQLException {
-        ResultSet resultSetAllUsers = userDAO.findAll();
-        ResultSet resultSetRole;
-        ArrayList<User> users = new ArrayList<>();
-
-        String login;
-        String email;
-        String dob;
-        User user;
-        int id;
-        while (resultSetAllUsers.next()) {
-            ArrayList<Role> userRoles = new ArrayList<>();
-            id = resultSetAllUsers.getInt(1);
-            login = resultSetAllUsers.getString(2);
-            email = resultSetAllUsers.getString(4);
-            dob = resultSetAllUsers.getString(5);
-            resultSetRole = roleDAO.getRoleByUserId(id);
-            while (resultSetRole.next()) {
-                int roleId = resultSetRole.getInt(1);
-                String roleName = resultSetRole.getString(2);
-                Role role = new Role(roleId, roleName);
-                userRoles.add(role);
-            }
-            user = new User(login, userRoles, email, dob);
-            users.add(user);
-        }
+//        ResultSet resultSetAllUsers = userDAO.findAll();
+//        ResultSet resultSetRole;
+//        ArrayList<User> users = new ArrayList<>();
+//
+//        String login;
+//        String email;
+//        String dob;
+//        User user;
+//        int id;
+//        while (resultSetAllUsers.next()) {
+//            ArrayList<Role> userRoles = new ArrayList<>();
+//            id = resultSetAllUsers.getInt(1);
+//            login = resultSetAllUsers.getString(2);
+//            email = resultSetAllUsers.getString(4);
+//            dob = resultSetAllUsers.getString(5);
+//            resultSetRole = roleDAO.getRoleByUserId(id);
+//            while (resultSetRole.next()) {
+//                int roleId = resultSetRole.getInt(1);
+//                String roleName = resultSetRole.getString(2);
+//                Role role = new Role(roleId, roleName);
+//                userRoles.add(role);
+//            }
+//            user = new User(login, userRoles, email, dob);
+//            users.add(user);
+//        }
+//        return users;
+        UserDAO userDAOBatis = sqlSession.getMapper(UserDAO.class);
+        List<User> users = userDAOBatis.findAll();
+        users.forEach(user -> user.getRoles().forEach(System.out::println));
         return users;
     }
 
