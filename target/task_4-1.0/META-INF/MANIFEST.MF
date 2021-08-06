@@ -1,7 +1,0 @@
-Manifest-Version: 1.0
-Created-By: IntelliJ IDEA
-Built-By: user
-Build-Jdk: Amazon Corretto version 11.0.12
-Class-Path: javax.servlet-api-4.0.1.jar jstl-1.2.jar postgresql-42.2.19.
- jar checker-qual-3.5.0.jar
-

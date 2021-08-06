@@ -9,26 +9,153 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="подправил роли, фильтры и тд&#10;нужно доделать теги frg">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/head.tag" afterDir="false" />
+    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="filters and tags done">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_12_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_12_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_12_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_12_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_12_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_12_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_annotation_jakarta_annotation_api_1_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_14_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_50.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_50.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_9_0_50.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_50.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_9_0_50.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_18_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_32.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_28.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/task5/practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/task_5_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/task_5_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_23_jre7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/web/filter/Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/web/filter/Access.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userList.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userList.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/editUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/editUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/web/filter/Access.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/web/filter/Access.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/editUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/editUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/filter/Access.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/filter/Access.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/editUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/editUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/RoleDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dao/RoleDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/RoleDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dao/RoleDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dao/UserDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UsersRolesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dao/UsersRolesDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UsersRolesDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dao/UsersRolesDAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dto/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/ServiceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/ServiceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/storage/UserStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/storage/UserStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/filter/Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/filter/Access.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/filter/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/filter/Auth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/DeleteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/EditPasswordServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditPasswordServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/EditUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/ListUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/ListUsersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/web/servlet/WelcomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/WelcomeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/editUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/userList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/tags/header.tag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/RoleDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/RoleDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UserDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UsersRolesDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dao/UsersRolesDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dto/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dto/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/ServiceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/services/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/storage/UserStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/filter/Access.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/filter/Auth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/servlet/DeleteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/servlet/EditPasswordServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/servlet/EditUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/servlet/ListUsersServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/servlet/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/servlet/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/web/servlet/WelcomeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/editUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/userList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/jsp/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/tags/header.tag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/dao/RoleDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/dao/RoleDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/dao/UserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/dao/UserDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/dao/UsersRolesDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/dao/UsersRolesDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/dto/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/dto/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/imges/hui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/services/ServiceFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/services/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/services/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/storage/UserStorage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/style/editUser.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/style/general.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/style/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/style/userList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/style/welcome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/filter/Access.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/filter/Auth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/servlet/DeleteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/servlet/EditPasswordServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/servlet/EditUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/servlet/ListUsersServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/servlet/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/servlet/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/classes/web/servlet/WelcomeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/editUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/userList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/jsp/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/lib/checker-qual-3.5.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/lib/javax.servlet-api-4.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/lib/postgresql-42.2.19.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/tags/header.tag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/imges/hui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/style/editUser.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/style/general.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/style/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/style/userList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/task_4-1.0/style/welcome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/task_5.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,8 +259,9 @@
         <option value="Tag Library Descriptor" />
         <option value="JavaScript File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
@@ -163,18 +291,23 @@
   <component name="PropertiesComponent">
     <property name="ChangesTree.GroupingKeys" value="module" />
     <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="ExpandSpringBootJavaOptionsPanel" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/SpringApplication.java" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -189,7 +322,16 @@
       <recent name="D:\practice\servletTasks\task_1\web\WEB-INF" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.practice">
+    <configuration name="practice" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="task_5" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.task5.practice" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
         <artifact name="task_5:war exploded">
@@ -278,6 +420,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.practice" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.practice" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
@@ -300,6 +451,10 @@
     </option>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="showImplicitBeans" value="false" />
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -359,6 +514,7 @@
       <workItem from="1628055978939" duration="9708000" />
       <workItem from="1628069787096" duration="1294000" />
       <workItem from="1628071804392" duration="1565000" />
+      <workItem from="1628143525451" duration="18558000" />
     </task>
     <task id="LOCAL-00001" summary="подправил роли, фильтры и тд&#10;нужно доделать теги + get...()">
       <created>1628068192698</created>
@@ -430,7 +586,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628076151990</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="filters and tags done">
+      <created>1628081542324</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1628081542324</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -452,7 +615,8 @@
     <MESSAGE value="подправил роли, фильтры и тд&#10;нужно доделать теги + get...()" />
     <MESSAGE value="подправил роли, фильтры и тд&#10;нужно доделать теги frg" />
     <MESSAGE value="подправил роли, фильтры и тд&#10;нужно доделать теги" />
-    <option name="LAST_COMMIT_MESSAGE" value="подправил роли, фильтры и тд&#10;нужно доделать теги" />
+    <MESSAGE value="filters and tags done" />
+    <option name="LAST_COMMIT_MESSAGE" value="filters and tags done" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
