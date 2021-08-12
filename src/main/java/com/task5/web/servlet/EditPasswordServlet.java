@@ -1,7 +1,7 @@
 package com.task5.web.servlet;
 
-import com.task5.services.ServiceFactory;
 import com.task5.services.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,7 +14,8 @@ import java.sql.SQLException;
 
 @WebServlet("/editpassword.jhtml")
 public class EditPasswordServlet extends HttpServlet {
-    private UserService userService = ServiceFactory.getInstance().getUserService();
+    @Autowired
+    private UserService userService;
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {

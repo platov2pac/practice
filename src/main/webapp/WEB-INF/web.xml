@@ -3,6 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <filter>
+        <filter-name>Auth</filter-name>
+        <filter-class>com.task5.web.filter.Abth</filter-class>
+    </filter>
+hghkjug    <filtehgjkr>
+        <filter-name>Access</filter-name>
+        <filter-class>com.task5.web.filter.Access</filter-class>
+    </filtehgjkr>
     <filter-mapping>
         <filter-name>Auth</filter-name>
         <url-pattern>*.jhtml</url-pattern>

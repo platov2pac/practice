@@ -9,18 +9,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="spring done&#10;connected mybatis(1%)">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/task5/storage/ConnectMyBatis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="spring done&#10;connected mybatis(8%)">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_4_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_3_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/task_5_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/task_5_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/dao/RoleDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/dao/RoleDAOImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dao/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/dao/UserDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dao/UserDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/dto/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dto/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/dto/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dto/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/dao/UserDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/dao/UsersRolesDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/dao/UsersRolesDAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/services/ServiceFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/storage/ConnectMyBatis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/storage/UserStorage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/filter/Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/filter/Access.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/filter/Auth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/filter/Abth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/DeleteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditPasswordServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditPasswordServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditUserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/ListUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/ListUsersServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/task_5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/task_5.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +193,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/SpringApplication.java" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ProselyteTutorials" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Facets" />
@@ -184,6 +210,8 @@
       <recent name="D:\practice\servletTasks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\practice\src\main\webapp\WEB-INF\jsp" />
+      <recent name="C:\Users\user\IdeaProjects\practice\src\main\webapp" />
       <recent name="D:\practice\servletTasks\task_4(mvn)\src\main" />
       <recent name="D:\practice\servletTasks\task_1\web\WEB-INF" />
     </key>
@@ -381,6 +409,15 @@
       <workItem from="1628069787096" duration="1294000" />
       <workItem from="1628071804392" duration="1565000" />
       <workItem from="1628143525451" duration="37578000" />
+      <workItem from="1628260050163" duration="60000" />
+      <workItem from="1628488320909" duration="11051000" />
+      <workItem from="1628508387925" duration="4981000" />
+      <workItem from="1628513474972" duration="3082000" />
+      <workItem from="1628516672716" duration="3271000" />
+      <workItem from="1628574309101" duration="13740000" />
+      <workItem from="1628661841516" duration="14925000" />
+      <workItem from="1628686734080" duration="3609000" />
+      <workItem from="1628747126676" duration="6448000" />
     </task>
     <task id="LOCAL-00001" summary="подправил роли, фильтры и тд&#10;нужно доделать теги + get...()">
       <created>1628068192698</created>
@@ -466,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628229723362</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="spring done&#10;connected mybatis(1%)">
+      <created>1628260068675</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1628260068675</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -493,6 +537,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="spring done&#10;connected mybatis(1%)" />
   </component>
   <component name="XDebuggerManager">
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.apache.catalina.connector.Request" memberName="session" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
         <watch expression="req.getParameterValues(&quot;role&quot;)" language="JAVA" />
@@ -500,6 +549,9 @@
         <watch expression="roles" language="JAVA" />
         <watch expression="user.getRoleName().split(&quot; &quot;)" language="JAVA" />
         <watch expression="userService.findAll()" language="JAVA" />
+      </configuration>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="req.getRequestURI().matches(&quot;.*[css|jpg|png|gif|js].*&quot;)" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

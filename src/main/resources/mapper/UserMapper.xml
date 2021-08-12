@@ -23,10 +23,65 @@
 
     </select>
 
-    <select id="rolesByUserId" resultType="Role" resultMap="userResult">
-        SELECT *
-        FROM roles r
-                 LEFT JOIN users_roles ur ON r.id = ur.roles_id
-        WHERE ur.user_id = #{id}
+
+    <select id="findByLogin" resultType="User" resultMap="userResult">
+        select u.id, u.login, u.email, u.dob, r.id, r.name
+        from users u
+                 left join users_roles ur on u.id = ur.user_id
+                 left join roles r on r.id = ur.roles_id
+        where u.login = #{login}
     </select>
+
+
+    <select id="findByLoginAndPassword" resultType="User" resultMap="userResult">
+        select u.id, u.login, u.email, u.dob, r.id, r.name
+        from users u
+                 left join users_roles ur on u.id = ur.user_id
+                 left join roles r on r.id = ur.roles_id
+        where u.login = #{login}
+          and u.pass = #{password}
+    </select>
+
+
+    <delete id="delete">
+        delete
+        from users u
+        where u.id = #{id}
+    </delete>
+
+
+    <delete id="deleteRole">
+        delete
+        from users_roles ur
+        where ur.user_id = ${id}
+    </delete>
+
+
+    <insert id="create">
+        insert into users
+        values (DEFAULT, #{login}, #{password}, #{email}, #{dob})
+    </insert>
+
+    <insert id="createRole">
+        insert
+        into users_roles values
+        <foreach collection="roles" item="role" separator=",">
+            (#{user_id}, #{role.id})
+        </foreach>
+    </insert>
+
+    <update id="updatePassword">
+        update users
+        set pass = #{newPassword}
+        where login = #{login}
+    </update>
+
+
+    <update id="update">
+        update users
+        set login = #{newLogin},
+            email = #{email},
+            dob   = #{dob}
+        where login = #{login}
+    </update>
 </mapper>

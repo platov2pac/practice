@@ -11,9 +11,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 
-@Order(1)
-@WebFilter(filterName = "Access",urlPatterns = "*.jhtml")
-
+@WebFilter(filterName = "Access", urlPatterns = "*.jhtml")
 public class Access implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -22,8 +20,13 @@ public class Access implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+        System.out.println("доступ");
         HttpServletRequest req = (HttpServletRequest) servletRequest;
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
+//        if (req.getRequestURI().matches(".*[css|jpg|png|gif|js].*")) {
+//            filterChain.doFilter(req, resp);
+//            return;
+//        }
         String loginURL = req.getContextPath() + "/auth.jhtml";
         String editUserPasswordURL = req.getContextPath() + "/editpassword.jhtml";
         String logoutURL = req.getContextPath() + "/logout.jhtml";
@@ -33,8 +36,6 @@ public class Access implements Filter {
         boolean isLogoutURL = req.getRequestURI().equals(logoutURL);
         boolean isWelcomeURL = req.getRequestURI().equals(welcomeURL);
         HttpSession session = req.getSession(false);
-        System.out.println(req.getRequestURI());
-        System.out.println(req.getContextPath() + "/logout.jhtml");
         if (isLoginURL || isEditUserPasswordURL || isLogoutURL || isWelcomeURL) {
             filterChain.doFilter(req, resp);
         } else {
@@ -55,9 +56,9 @@ public class Access implements Filter {
                 }
 
             });
-
         }
     }
+
 
     @Override
     public void destroy() {

@@ -3,6 +3,14 @@ spring:
     view:
       prefix: /WEB-INF/jsp/
       suffix: .jsp
+  datasource:
+    url: jdbc:postgresql://localhost:5432/myapp
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+  type-aliases-package: com.task5.dto
 server:
   servlet:
     session:

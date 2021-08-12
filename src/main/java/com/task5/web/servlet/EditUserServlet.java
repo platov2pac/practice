@@ -2,8 +2,8 @@ package com.task5.web.servlet;
 
 import com.task5.dto.Role;
 import com.task5.dto.User;
-import com.task5.services.ServiceFactory;
 import com.task5.services.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,7 +18,8 @@ import java.util.Arrays;
 
 @WebServlet("/edituser.jhtml")
 public class EditUserServlet extends HttpServlet {
-    private UserService userService = ServiceFactory.getInstance().getUserService();
+    @Autowired
+    private UserService userService;
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -47,7 +48,7 @@ public class EditUserServlet extends HttpServlet {
         String[] roles = req.getParameterValues("role");
         ArrayList<Role> userRoles = new ArrayList<>();
         if (roles != null) {
-            Arrays.stream(roles).forEach(role-> userRoles.add(new Role(role)));
+            Arrays.stream(roles).forEach(role -> userRoles.add(new Role(role)));
         }
         String password = req.getParameter("password");
         String loginFromSession = (String) session.getAttribute("login");
@@ -89,7 +90,9 @@ public class EditUserServlet extends HttpServlet {
                 session.setAttribute("login", newLogin);
             }
             try {
+                User user = userService.findByLogin(loginUser);
                 userService.update(
+                        user.getId(),
                         loginUser,
                         newLogin,
                         email,

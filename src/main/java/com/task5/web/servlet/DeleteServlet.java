@@ -1,8 +1,8 @@
 package com.task5.web.servlet;
 
 import com.task5.dto.User;
-import com.task5.services.ServiceFactory;
 import com.task5.services.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -14,10 +14,12 @@ import java.sql.SQLException;
 
 @WebServlet("/deleteUser.jhtml")
 public class DeleteServlet extends HttpServlet {
-    private UserService userService = ServiceFactory.getInstance().getUserService();
+
+    @Autowired
+    private UserService userService;
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String deletableLogin = req.getParameter("deletableLogin");
         User deletableUser = null;
         try {
@@ -30,7 +32,6 @@ public class DeleteServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-//
         resp.sendRedirect(req.getContextPath() + "/listUsers.jhtml");
     }
 }
