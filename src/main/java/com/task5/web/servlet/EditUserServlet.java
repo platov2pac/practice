@@ -4,6 +4,10 @@ import com.task5.dto.Role;
 import com.task5.dto.User;
 import com.task5.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -16,12 +20,14 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-@WebServlet("/edituser.jhtml")
-public class EditUserServlet extends HttpServlet {
+//@WebServlet("/edituser.jhtml")
+@Controller
+@RequestMapping("edituser.jhtml")
+public class EditUserServlet {
     @Autowired
     private UserService userService;
 
-    @Override
+    @GetMapping
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String login = req.getParameter("loginUser");
         User user = null;
@@ -38,7 +44,7 @@ public class EditUserServlet extends HttpServlet {
         req.getRequestDispatcher("/WEB-INF/jsp/editUser.jsp").forward(req, resp);
     }
 
-    @Override
+    @PostMapping
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         String loginUser = req.getParameter("loginUser");

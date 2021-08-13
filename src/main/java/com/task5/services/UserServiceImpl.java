@@ -60,6 +60,6 @@ public class UserServiceImpl implements UserService {
     @Override
     public void create(User user) throws SQLException {
         userDAOBatis.create(user);
-        userDAOBatis.createRole(user.getId(), user.getRoles());
+        userDAOBatis.createRole(userDAOBatis.findByLogin(user.getLogin()).getId(), user.getRoles());
     }
 }

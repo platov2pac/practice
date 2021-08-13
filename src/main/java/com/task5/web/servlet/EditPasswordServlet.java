@@ -2,6 +2,11 @@ package com.task5.web.servlet;
 
 import com.task5.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttribute;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,21 +17,20 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet("/editpassword.jhtml")
-public class EditPasswordServlet extends HttpServlet {
+//@WebServlet("/editpassword.jhtml")
+@Controller
+@RequestMapping("/editpassword.jhtml")
+public class EditPasswordServlet {
     @Autowired
     private UserService userService;
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-        String login = (String) session.getAttribute("login");
-        String password = req.getParameter("newPassword");
+   @PostMapping
+    protected String doPost(@RequestParam String newPassword, @SessionAttribute String login) throws ServletException, IOException {
         try {
-            userService.updatePassword(login, password);
+            userService.updatePassword(login, newPassword);
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        resp.sendRedirect(req.getContextPath() + "/welcome.jhtml");
+        return "redirect:/welcome.jhtml";
     }
 }

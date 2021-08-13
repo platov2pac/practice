@@ -3,6 +3,10 @@ package com.task5.web.servlet;
 import com.task5.dto.User;
 import com.task5.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -12,15 +16,15 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet("/deleteUser.jhtml")
-public class DeleteServlet extends HttpServlet {
+@Controller
+@RequestMapping("/deleteUser.jhtml")
+public class DeleteServlet {
 
     @Autowired
     private UserService userService;
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        String deletableLogin = req.getParameter("deletableLogin");
+    @GetMapping
+    protected String doGet(@RequestParam String deletableLogin) throws IOException {
         User deletableUser = null;
         try {
             deletableUser = userService.findByLogin(deletableLogin);
@@ -32,6 +36,6 @@ public class DeleteServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        resp.sendRedirect(req.getContextPath() + "/listUsers.jhtml");
+        return "redirect:/listUsers.jhtml";
     }
 }

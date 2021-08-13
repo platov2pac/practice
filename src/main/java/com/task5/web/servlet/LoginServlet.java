@@ -3,6 +3,9 @@ package com.task5.web.servlet;
 import com.task5.dto.User;
 import com.task5.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,13 +16,15 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
-@WebServlet("/auth.jhtml")
-public class LoginServlet extends HttpServlet {
+
+@Controller
+@RequestMapping("/auth.jhtml")
+public class LoginServlet {
     @Autowired
     private UserService userService;
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    @GetMapping
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         HttpSession session = req.getSession();
         boolean userIsLogged = session != null && session.getAttribute("login") != null;
         if (!userIsLogged) {
@@ -30,26 +35,23 @@ public class LoginServlet extends HttpServlet {
         }
     }
 
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String login = req.getParameter("login");
-        String pass = req.getParameter("pass");
+    @PostMapping
+    public String doPost(@RequestParam String login, @RequestParam String password, HttpSession session, Model model) throws IOException, ServletException {
         User user = null;
         try {
-            user = userService.findByLoginAndPassword(login, pass);
+            user = userService.findByLoginAndPassword(login, password);
         } catch (SQLException e) {
             e.printStackTrace();
         }
         if (user != null) {
-            HttpSession session = req.getSession();
             session.setAttribute("login", user.getLogin());
             session.setAttribute("roles", user.getRoles());
-            resp.sendRedirect(req.getContextPath() + "/welcome.jhtml");
+            return "redirect:/welcome.jhtml";
         } else {
-            req.setAttribute("login", login);
-            req.setAttribute("pass", pass);
-            req.getRequestDispatcher("WEB-INF/jsp/login.jsp?authFailed=true").forward(req, resp);
+            model.addAttribute("login", login);
+            model.addAttribute("password", password);
+            model.addAttribute("authFailed", true);
+            return "login";
         }
-
     }
 }

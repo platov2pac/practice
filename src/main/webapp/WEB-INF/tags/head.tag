@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="${contpath}style/general.css"/>
         <link rel="stylesheet" href="${contpath}style/login.css"/>
 
-        <c:if test="${param.authFailed}">
+        <c:if test="${authFailed}">
             <style>
                 input {
                     border-bottom: 5px solid rgba(250, 0, 0, 0.73);
