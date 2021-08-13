@@ -9,20 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="MyBatis done&#10;connect springMVC">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/DeleteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditPasswordServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditPasswordServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/ListUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/ListUsersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/WelcomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/WelcomeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/head.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/head.tag" afterDir="false" />
-    </list>
+    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="spring form" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -396,7 +383,7 @@
       <workItem from="1628773312710" duration="319000" />
       <workItem from="1628773680335" duration="996000" />
       <workItem from="1628833315742" duration="528000" />
-      <workItem from="1628833881052" duration="6461000" />
+      <workItem from="1628833881052" duration="6853000" />
     </task>
     <task id="LOCAL-00001" summary="подправил роли, фильтры и тд&#10;нужно доделать теги + get...()">
       <created>1628068192698</created>
@@ -496,7 +483,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628754029260</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="spring form">
+      <created>1628848970382</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1628848970382</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +515,8 @@
     <MESSAGE value="filters and tags done" />
     <MESSAGE value="spring done&#10;connected mybatis(1%)" />
     <MESSAGE value="MyBatis done&#10;connect springMVC" />
-    <option name="LAST_COMMIT_MESSAGE" value="MyBatis done&#10;connect springMVC" />
+    <MESSAGE value="spring form" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring form" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
