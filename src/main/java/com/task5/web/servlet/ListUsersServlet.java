@@ -3,6 +3,7 @@ package com.task5.web.servlet;
 import com.task5.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -22,15 +23,13 @@ public class ListUsersServlet {
     private UserService userService;
 
     @GetMapping
-    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {
-        req.setCharacterEncoding("UTF-8");
-        resp.setCharacterEncoding("UTF-8");
+    public String doGet(Model model) {
         try {
-            req.setAttribute("users", userService.findAll());
+            model.addAttribute("users", userService.findAll());
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        req.getRequestDispatcher("/WEB-INF/jsp/userList.jsp").forward(req, resp);
+        return "/userList";
     }
 }
 

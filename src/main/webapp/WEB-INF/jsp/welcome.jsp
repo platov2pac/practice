@@ -14,14 +14,14 @@
 
 <div class="main">
     ${sessionScope.roles1}
-    <myTags:header login="${sessionScope.login}"
+    <myTags:header login="${sessionScope.sessionLogin}"
 
                    mainLink="${contpath}welcome.jhtml"
                    userListLink="${contpath}listUsers.jhtml"
                    logoutLink="${contpath}logout.jhtml"
                    roles="${sessionScope.roles}"/>
     <div class="content">
-        <p class="app-description">Привет, уважаемый ${sessionScope.login}. Ты попал на главную страницу приложения.
+        <p class="app-description">Привет, уважаемый ${sessionScope.sessionLogin}. Ты попал на главную страницу приложения.
             Здесь ты можешь изменить свой пароль или перемещаться по другим страницам, если у тебя есть к ним
             доступ.</p>
         <form method="post" action="${contpath}editpassword.jhtml" id="form-edit-pass">

@@ -8,8 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -24,19 +22,19 @@ public class LoginServlet {
     private UserService userService;
 
     @GetMapping
-    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        HttpSession session = req.getSession();
-        boolean userIsLogged = session != null && session.getAttribute("login") != null;
+    public String doGet(HttpSession session) {
+
+        boolean userIsLogged = session != null && session.getAttribute("sessionLogin") != null;
         if (!userIsLogged) {
-            req.getRequestDispatcher("WEB-INF/jsp/login.jsp").forward(req, resp);
+            return "/login";
 
         } else {
-            resp.sendRedirect(req.getContextPath() + "/welcome.jhtml");
+            return "redirect:/welcome";
         }
     }
 
     @PostMapping
-    public String doPost(@RequestParam String login, @RequestParam String password, HttpSession session, Model model) throws IOException, ServletException {
+    public String doPost(@RequestParam String login, @RequestParam String password, HttpSession session, Model model) {
         User user = null;
         try {
             user = userService.findByLoginAndPassword(login, password);
@@ -44,7 +42,7 @@ public class LoginServlet {
             e.printStackTrace();
         }
         if (user != null) {
-            session.setAttribute("login", user.getLogin());
+            session.setAttribute("sessionLogin", user.getLogin());
             session.setAttribute("roles", user.getRoles());
             return "redirect:/welcome.jhtml";
         } else {

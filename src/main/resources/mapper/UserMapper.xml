@@ -10,13 +10,13 @@
         <collection property="roles" ofType="Role" resultMap="rolesUser"/>
     </resultMap>
     <resultMap id="rolesUser" type="Role">
-        <result property="id" column="id"/>
+        <id property="id" column="role_id"/>
         <result property="name" column="name"/>
     </resultMap>
 
 
     <select id="findAll" resultType="User" resultMap="userResult">
-        select u.id, u.login, u.email, u.dob, r.id, r.name
+        select u.id, u.login, u.email, u.dob, r.id as role_id, r.name
         from users u
                  left join users_roles ur on u.id = ur.user_id
                  left join roles r on r.id = ur.roles_id
@@ -25,7 +25,7 @@
 
 
     <select id="findByLogin" resultType="User" resultMap="userResult">
-        select u.id, u.login, u.email, u.dob, r.id, r.name
+        select u.id, u.login, u.email, u.dob, r.id as role_id, r.name
         from users u
                  left join users_roles ur on u.id = ur.user_id
                  left join roles r on r.id = ur.roles_id
@@ -34,7 +34,7 @@
 
 
     <select id="findByLoginAndPassword" resultType="User" resultMap="userResult">
-        select u.id, u.login, u.email, u.dob, r.id, r.name
+        select u.id, u.login, u.email, u.dob, r.id as role_id, r.name
         from users u
                  left join users_roles ur on u.id = ur.user_id
                  left join roles r on r.id = ur.roles_id

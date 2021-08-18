@@ -20,13 +20,8 @@ public class Access implements Filter {
 
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
-        System.out.println("доступ");
         HttpServletRequest req = (HttpServletRequest) servletRequest;
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
-//        if (req.getRequestURI().matches(".*[css|jpg|png|gif|js].*")) {
-//            filterChain.doFilter(req, resp);
-//            return;
-//        }
         String loginURL = req.getContextPath() + "/auth.jhtml";
         String editUserPasswordURL = req.getContextPath() + "/editpassword.jhtml";
         String logoutURL = req.getContextPath() + "/logout.jhtml";
