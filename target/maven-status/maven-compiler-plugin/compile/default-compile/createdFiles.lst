@@ -1,0 +1,15 @@
+com\task5\dto\User.class
+com\task5\services\UserService.class
+com\task5\dto\Role.class
+com\task5\web\servlet\EditPasswordServlet.class
+com\task5\dao\UserDAO.class
+com\task5\practice.class
+com\task5\web\filter\Abth.class
+com\task5\web\servlet\ListUsersServlet.class
+com\task5\web\servlet\EditUserServlet.class
+com\task5\services\UserServiceImpl.class
+com\task5\web\servlet\LoginServlet.class
+com\task5\web\filter\Access.class
+com\task5\web\servlet\WelcomeServlet.class
+com\task5\web\servlet\LogoutServlet.class
+com\task5\web\servlet\DeleteServlet.class

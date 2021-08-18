@@ -1,0 +1,87 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.task5.dao.UserDAO">
+    <resultMap id="userResult" type="User">
+        <id property="id" column="id"/>
+        <result property="login" column="login"/>
+        <result property="password" column="pass"/>
+        <result property="email" column="email"/>
+        <result property="dob" column="dob"/>
+        <collection property="roles" ofType="Role" resultMap="rolesUser"/>
+    </resultMap>
+    <resultMap id="rolesUser" type="Role">
+        <id property="id" column="role_id"/>
+        <result property="name" column="name"/>
+    </resultMap>
+
+
+    <select id="findAll" resultType="User" resultMap="userResult">
+        select u.id, u.login, u.email, u.dob, r.id as role_id, r.name
+        from users u
+                 left join users_roles ur on u.id = ur.user_id
+                 left join roles r on r.id = ur.roles_id
+
+    </select>
+
+
+    <select id="findByLogin" resultType="User" resultMap="userResult">
+        select u.id, u.login, u.email, u.dob, r.id as role_id, r.name
+        from users u
+                 left join users_roles ur on u.id = ur.user_id
+                 left join roles r on r.id = ur.roles_id
+        where u.login = #{login}
+    </select>
+
+
+    <select id="findByLoginAndPassword" resultType="User" resultMap="userResult">
+        select u.id, u.login, u.email, u.dob, r.id as role_id, r.name
+        from users u
+                 left join users_roles ur on u.id = ur.user_id
+                 left join roles r on r.id = ur.roles_id
+        where u.login = #{login}
+          and u.pass = #{password}
+    </select>
+
+
+    <delete id="delete">
+        delete
+        from users u
+        where u.id = #{id}
+    </delete>
+
+
+    <delete id="deleteRole">
+        delete
+        from users_roles ur
+        where ur.user_id = #{id}
+    </delete>
+
+
+    <insert id="create">
+        insert into users
+        values (DEFAULT, #{login}, #{password}, #{email}, #{dob})
+    </insert>
+
+    <insert id="createRole">
+        insert
+        into users_roles values
+        <foreach collection="roles" item="role" separator=",">
+            (#{user_id}, #{role.id})
+        </foreach>
+    </insert>
+
+    <update id="updatePassword">
+        update users
+        set pass = #{newPassword}
+        where login = #{login}
+    </update>
+
+
+    <update id="update">
+        update users
+        set login = #{newLogin},
+            email = #{email},
+            dob   = #{dob}
+        where login = #{login}
+    </update>
+</mapper>
