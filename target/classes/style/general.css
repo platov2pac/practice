@@ -93,3 +93,21 @@ p {
     width: 400px;
 
 }
+
+.errorsStyle{
+    color: red;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.inputError {
+    border-bottom: 5px solid rgba(250, 0, 0, 0.73);
+    color: rgba(250, 0, 0, 0.73);
+}
+
+.inputError::placeholder {
+    color: rgba(250, 0, 0, 0.73);
+}
+
+.inputError:focus {
+    border-bottom: 5px solid rgba(250, 0, 0, 1);
+}

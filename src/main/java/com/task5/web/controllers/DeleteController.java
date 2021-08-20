@@ -1,4 +1,4 @@
-package com.task5.web.servlet;
+package com.task5.web.controllers;
 
 import com.task5.dto.User;
 import com.task5.services.UserService;
@@ -13,7 +13,7 @@ import java.sql.SQLException;
 
 @Controller
 @RequestMapping("/deleteUser.jhtml")
-public class DeleteServlet {
+public class DeleteController {
 
     @Autowired
     private UserService userService;

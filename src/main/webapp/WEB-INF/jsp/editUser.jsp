@@ -20,7 +20,8 @@
                    roles="${roles}"/>
     <div class="content">
         <form:form class="editForm" method="post" action="${contpath}edituser.jhtml" modelAttribute="user">
-            <fieldset <c:if test="${editFailed}"> style="border:1px solid red"</c:if>>
+            <form:errors cssStyle="border:1px solid red" element="fieldset"/>
+            <fieldset>
                 <legend>
                     <c:if test="${loginUser==null}">
                         <p>Вы добавляете пользователя</p>
@@ -28,17 +29,18 @@
                     <c:if test="${loginUser!=null}">
                         <p>Вы изменяете пользователя ${loginUser}</p>
                     </c:if>
-
-                    <c:if test="${editFailed}">
-                        <div class="error" style="color: red">Ошибки в полях: ${errors}
-                        </div>
-                    </c:if></legend>
+                </legend>
                 <label>
-                    <form:input type="text" path="login" value="${login}" placeholder="Login"/>
-                    <form:input type="password" path="password" placeholder="Password"/>
-                    <form:input type="text" path="email" value="${email}" placeholder="Email"/>
-                    <form:input type="date" path="dob" value="${dob}" placeholder="Date of birthday"/>
-                    <form:checkboxes path="roles" items="${allRolesInApp}" itemLabel="name" itemValue="name" />
+                    <form:errors path="login" cssClass="errorsStyle" />
+                    <form:input type="text" path="login" value="${login}" placeholder="Login" cssErrorClass="inputError"/>
+                    <form:errors path="password" cssClass="errorsStyle"/>
+                    <form:input type="password" path="password" placeholder="Password" cssErrorClass="inputError"/>
+                    <form:errors path="email" cssClass="errorsStyle"/>
+                    <form:input type="text" path="email" value="${email}" placeholder="Email" cssErrorClass="inputError"/>
+                    <form:errors path="dob" cssClass="errorsStyle"/>
+                    <form:input type="date" path="dob" value="${dob}" placeholder="Date of birthday" cssErrorClass="inputError"/>
+                    <form:errors path="roles" cssClass="errorsStyle"/>
+                    <form:checkboxes path="roles" items="${allRolesInApp}" itemLabel="name" itemValue="name"/>
 
                 </label>
                 <button type="submit" <c:if test="${loginUser!=null}"> name="loginUser" value="${loginUser}"</c:if>>

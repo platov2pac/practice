@@ -1,4 +1,4 @@
-package com.task5.web.servlet;
+package com.task5.web.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/logout.jhtml")
-public class LogoutServlet extends HttpServlet {
+public class LogoutController extends HttpServlet {
 
     @GetMapping
     protected String doGet(HttpSession session) {

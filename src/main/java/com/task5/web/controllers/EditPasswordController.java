@@ -1,4 +1,4 @@
-package com.task5.web.servlet;
+package com.task5.web.controllers;
 
 import com.task5.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,18 +9,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.SessionAttribute;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
 
 //@WebServlet("/editpassword.jhtml")
 @Controller
 @RequestMapping("/editpassword.jhtml")
-public class EditPasswordServlet {
+public class EditPasswordController {
     @Autowired
     private UserService userService;
 

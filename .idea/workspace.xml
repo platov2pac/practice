@@ -9,19 +9,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="spring form">
+    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="spring form done&#10;next validation">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_2_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_4_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_5_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/validators/EditUserValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/validators/LoginValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/validators/UserRolesValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/controllers/EditUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/forms/LoginForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lang/messages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/lang/messages_en.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/dto/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/dto/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/filter/Abth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/filter/Abth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/filter/Access.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/filter/Access.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/DeleteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditUserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditUserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/ListUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/ListUsersServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/DeleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/controllers/DeleteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditPasswordServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/controllers/EditPasswordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/EditUserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/ListUsersServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/controllers/ListUsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/controllers/LogoutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/servlet/WelcomeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/controllers/WelcomeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editUser.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/head.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/head.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/editUser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/editUser.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/tags/head.tag" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WEB-INF/tags/head.tag" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/task5/web/servlet/DeleteServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/task5/web/servlet/EditPasswordServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/task5/web/servlet/EditUserServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/task5/web/servlet/ListUsersServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/task5/web/servlet/LoginServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/task5/web/servlet/LogoutServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/task5/web/servlet/WelcomeServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/style/general.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/style/general.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task_5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/task_5.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +215,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -197,6 +226,7 @@
       <recent name="D:\practice\servletTasks" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\practice\src\main\resources\messages" />
       <recent name="C:\Users\user\IdeaProjects\practice\src\main\webapp\WEB-INF\jsp" />
       <recent name="C:\Users\user\IdeaProjects\practice\src\main\webapp" />
       <recent name="D:\practice\servletTasks\task_4(mvn)\src\main" />
@@ -425,7 +455,9 @@
       <workItem from="1629117614534" duration="2770000" />
       <workItem from="1629120431595" duration="3407000" />
       <workItem from="1629179421251" duration="17231000" />
-      <workItem from="1629265921710" duration="5649000" />
+      <workItem from="1629265921710" duration="16214000" />
+      <workItem from="1629352272318" duration="20104000" />
+      <workItem from="1629439374172" duration="14898000" />
     </task>
     <task id="LOCAL-00001" summary="подправил роли, фильтры и тд&#10;нужно доделать теги + get...()">
       <created>1628068192698</created>
@@ -539,7 +571,21 @@
       <option name="project" value="LOCAL" />
       <updated>1628849171632</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="spring form done&#10;next validation">
+      <created>1629276813666</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1629276813666</updated>
+    </task>
+    <task id="LOCAL-00018" summary="spring form done&#10;next validation">
+      <created>1629276874559</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1629276874559</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -565,7 +611,8 @@
     <MESSAGE value="spring done&#10;connected mybatis(1%)" />
     <MESSAGE value="MyBatis done&#10;connect springMVC" />
     <MESSAGE value="spring form" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring form" />
+    <MESSAGE value="spring form done&#10;next validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring form done&#10;next validation" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
@@ -581,10 +628,6 @@
         <watch expression="roles" language="JAVA" />
         <watch expression="user.getRoleName().split(&quot; &quot;)" language="JAVA" />
         <watch expression="userService.findAll()" language="JAVA" />
-      </configuration>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="getAllRolesInApp()" language="JAVA" />
-        <watch expression="user.roles.get(0).equals(getAllRolesInApp().get(0))" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
