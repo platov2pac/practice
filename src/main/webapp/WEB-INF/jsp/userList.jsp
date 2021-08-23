@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="myTags" tagdir="/WEB-INF/tags" %>
-
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%--
   Created by IntelliJ IDEA.
   User: Ilya
@@ -11,9 +11,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <myTags:head namePage="userList"/>
+<fmt:setLocale value="${lang}"/>
+<fmt:setBundle basename="lang.messages"/>
 <body>
 <div class="main">
     <myTags:header login="${login}"
+                   userLang="${lang}"
                    mainLink="${contpath}welcome.jhtml"
                    userListLink="${contpath}listUsers.jhtml"
                    logoutLink="${contpath}logout.jhtml"
@@ -21,7 +24,7 @@
     <div class="content">
         <table class="main-table">
             <caption>
-                <p>Список пользователей
+                <p><fmt:message key="label.allUsers"/>
                     <a href="${contpath}edituser.jhtml">
                         <span class="material-icons"
                               style="color: black; font-size: 32px; height: 32px">person_add</span>
@@ -31,12 +34,10 @@
 
             <thead>
             <tr>
-                <th>
-                    <p>Логин</p>
-                </th>
-                <th><p>Роль</p></th>
-                <th><p>Почта</p></th>
-                <th><p>Дата рождения</p></th>
+                <th><p><fmt:message key="label.login"/></p></th>
+                <th><p><fmt:message key="label.role"/></p></th>
+                <th><p><fmt:message key="label.email"/></p></th>
+                <th><p><fmt:message key="label.dob"/></p></th>
             </tr>
             </thead>
             <tbody>

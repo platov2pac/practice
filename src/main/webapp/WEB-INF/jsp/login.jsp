@@ -9,11 +9,13 @@
   Time: 10:55
   To change this template use File | Settings | File Templates.
 --%>
-<fmt:setLocale value="en"/>
+<fmt:setLocale value="${lang}"/>
 <fmt:setBundle basename="lang.messages"/>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <myTags:head namePage="login"/>
+<fmt:message key="label.login" var="i18nLogin"/>
+<fmt:message key="label.password" var="i18nPassword"/>
 <body>
 <div class="loginForm">
     <div class="signup">
@@ -25,11 +27,16 @@
     <form:form method="post" action="${contpath}auth.jhtml" modelAttribute="loginForm">
         <label>
             <form:errors path="login" cssClass="errorsStyle"/>
-            <form:input type="text" placeholder= path="login" value="${login}" cssErrorClass="inputError"/>
+            <form:input type="text" placeholder="${i18nLogin}" path="login" value="${login}"
+                        cssErrorClass="inputError"/>
             <form:errors path="password" cssClass="errorsStyle"/>
-            <form:input type="password" placeholder="Password" path="password" value="${password}"
+            <form:input type="password" placeholder="${i18nPassword}" path="password" value="${password}"
                         cssErrorClass="inputError"/>
             <button type="submit">login</button>
+            <div class="selectLang">
+                <a href="?lang=en">en</a>
+                <a href="?lang=ru">ru</a>
+            </div>
         </label>
     </form:form>
 </div>

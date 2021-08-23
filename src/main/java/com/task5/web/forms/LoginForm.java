@@ -3,6 +3,15 @@ package com.task5.web.forms;
 public class LoginForm {
     private String login;
     private String password;
+    private String language;
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
+    }
 
     public LoginForm() {
     }
