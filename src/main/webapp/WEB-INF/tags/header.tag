@@ -6,10 +6,8 @@
 <%@attribute name="mainLink" required="true" %>
 <%@attribute name="userListLink" required="true" %>
 <%@attribute name="logoutLink" required="true" %>
-<%@attribute name="roles" required="true" type="java.util.List" %>
-<%@attribute name="userLang" required="true" %>
-<fmt:setLocale value="${lang}"/>
-<fmt:setBundle basename="lang.messages"/>
+<%@attribute name="roles" required="true"%>
+
 <header>
     <p>AdmApp</p>
     <div class="nav-bar">
@@ -19,9 +17,9 @@
 
         <c:forEach var="role" items="${roles}">
 
-            <c:if test="${role.getName() == 'admin'}">
+            <c:if test="${role == '[ROLE_ADMIN]'}">
                 <form method='get' action="${userListLink}">
-                    <button type="submit" class="list-users"><fmt:message key="label.allUsers"/> </button>
+                    <button type="submit" class="list-users"><fmt:message key="label.allUsers"/></button>
                 </form>
             </c:if>
         </c:forEach>

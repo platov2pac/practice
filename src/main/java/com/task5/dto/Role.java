@@ -11,10 +11,10 @@ public class Role {
 
     public Role(String name) {
         this.name = name;
-        if (name.equals("admin")) {
+        if (name.equals("ROLE_ADMIN")) {
             this.id = 1;
         }
-        if (name.equals("user")) {
+        if (name.equals("ROLE_USER")) {
             this.id = 2;
         }
     }

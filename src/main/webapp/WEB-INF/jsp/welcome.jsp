@@ -1,6 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="myTags" tagdir="/WEB-INF/tags" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: Ilya
@@ -11,25 +12,24 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <myTags:head namePage="welcome"/>
+<sec:authentication property="principal" var="authUser"/>
 <body>
-<fmt:setLocale value="${lang}"/>
-<fmt:setBundle basename="lang.messages"/>
-<fmt:message key="label.newPassword" var="i18nNewPassword"/>
+<spring:message code="label.newPassword" var="i18nNewPassword"/>
 <div class="main">
-    <myTags:header login="${sessionScope.sessionLogin}"
-                   userLang="${lang}"
+    <myTags:header login="${authUser.username}"
                    mainLink="${contpath}welcome.jhtml"
                    userListLink="${contpath}listUsers.jhtml"
                    logoutLink="${contpath}logout.jhtml"
-                   roles="${sessionScope.roles}"/>
+                   roles="${authUser.authorities}"/>
     <div class="content">
-        <p class="app-description"><fmt:message key="label.appDesc"><fmt:param
-                value="${sessionScope.sessionLogin}"/></fmt:message></p>
+        <p class="app-description"><spring:message code="label.appDesc"
+                                                   arguments="${authUser.username}"/></p>
         <form method="post" action="${contpath}editpassword.jhtml" id="form-edit-pass">
             <label>
                 <input type="password" placeholder="${i18nNewPassword}" name="newPassword">
             </label>
-            <button class="editPass" type="submit"><fmt:message key="label.editPassword"/></button>
+            <button class="editPass" type="submit" name="sessionLogin" value="${authUser.username}"><spring:message
+                    code="label.editPassword"/></button>
         </form>
     </div>
 

@@ -6,6 +6,13 @@ import com.task5.services.UserService;
 import com.task5.services.validators.EditUserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.autoconfigure.neo4j.Neo4jProperties;
+import org.springframework.security.core.AuthenticatedPrincipal;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContext;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -25,13 +32,15 @@ public class EditUserController {
     @Autowired
     @Qualifier("editUserValidator")
     private EditUserValidator editUserValidator;
+    @Autowired
+    private BCryptPasswordEncoder passwordEncoder;
 
     @GetMapping
     protected String doGet(Model model, @RequestParam(value = "loginUser", required = false) String loginUserToEdit) {
         User user = new User();
         try {
             if (loginUserToEdit != null) {
-                user = userService.findByLogin(loginUserToEdit);
+                user = userService.findByLoginWithoutPass(loginUserToEdit);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -42,9 +51,9 @@ public class EditUserController {
     }
 
     @PostMapping
-    protected String doPost( @ModelAttribute User user, @RequestParam(required = false) String loginUser,
-                            HttpSession session, Model model, BindingResult bindingResult) {
-        String sessionLogin = (String) session.getAttribute("sessionLogin");
+    protected String doPost(@ModelAttribute User user, @RequestParam(required = false) String loginUser,
+                            Model model, BindingResult bindingResult, HttpSession session) {
+        // String sessionLogin = (String) session.getAttribute("sessionLogin");
 //        try {
 //            if (!user.getEmail().contains("@")
 //                    || user.getLogin().equals("")
@@ -75,8 +84,13 @@ public class EditUserController {
 //        } catch (SQLException e) {
 //            e.printStackTrace();
 //        }
+//        SecurityContext context = SecurityContextHolder.getContext();
+//        Authentication authentication = context.getAuthentication();
+//        UserDetails principal = (UserDetails) authentication.getPrincipal();
+//        String sessionLogin = principal.getUsername();
+
         editUserValidator.validate(user, bindingResult);
-        if(bindingResult.hasErrors()){
+        if (bindingResult.hasErrors()) {
             model.addAttribute("loginUser", loginUser);
             model.addAttribute("user", user);
             model.addAttribute("editFailed", true);
@@ -84,16 +98,17 @@ public class EditUserController {
         }
 
         if (loginUser != null) {
-            if (loginUser.equals(sessionLogin)) {
-
-                session.setAttribute("login", user.getLogin());
-            }
+//            if (loginUser.equals(sessionLogin)) {
+//
+//                session.setAttribute("login", user.getLogin());
+//            }
             try {
                 User userForUserId = userService.findByLogin(loginUser);
                 userService.update(
                         userForUserId.getId(),
                         loginUser,
                         user.getLogin(),
+                        passwordEncoder.encode(user.getPassword()),
                         user.getEmail(),
                         user.getDob(),
                         (ArrayList<Role>) user.getRoles());
@@ -102,7 +117,7 @@ public class EditUserController {
             }
             return "redirect:/listUsers.jhtml";
         } else {
-            User newUser = new User(user.getLogin(), user.getPassword(), user.getRoles(), user.getEmail(), user.getDob());
+            User newUser = new User(user.getLogin(), passwordEncoder.encode(user.getPassword()), user.getRoles(), user.getEmail(), user.getDob());
             try {
                 userService.create(newUser);
             } catch (SQLException e) {
@@ -115,8 +130,8 @@ public class EditUserController {
     @ModelAttribute("allRolesInApp")
     public List<Role> getAllRolesInApp() {
         List<Role> allRoles = new ArrayList<Role>();
-        allRoles.add(new Role("admin"));
-        allRoles.add(new Role("user"));
+        allRoles.add(new Role("ROLE_ADMIN"));
+        allRoles.add(new Role("ROLE_USER"));
         return allRoles;
     }
 }

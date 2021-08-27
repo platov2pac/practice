@@ -25,6 +25,14 @@
 
 
     <select id="findByLogin" resultType="User" resultMap="userResult">
+        select u.id, u.pass, u.login, u.email, u.dob, r.id as role_id, r.name
+        from users u
+                 left join users_roles ur on u.id = ur.user_id
+                 left join roles r on r.id = ur.roles_id
+        where u.login = #{login}
+    </select>
+
+    <select id="findByLoginWithoutPass" resultType="User" resultMap="userResult">
         select u.id, u.login, u.email, u.dob, r.id as role_id, r.name
         from users u
                  left join users_roles ur on u.id = ur.user_id
@@ -81,7 +89,8 @@
         update users
         set login = #{newLogin},
             email = #{email},
-            dob   = #{dob}
+            dob   = #{dob},
+            pass  = #{newPassword}
         where login = #{login}
     </update>
 </mapper>

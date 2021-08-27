@@ -21,6 +21,6 @@ server:
     session:
       tracking-modes: cookie
     encoding:
-#      charset: UTF-8
       enabled: true
       force: true
+#debug: true

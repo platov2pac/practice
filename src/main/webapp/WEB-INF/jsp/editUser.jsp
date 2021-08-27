@@ -1,7 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="myTags" tagdir="/WEB-INF/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: Ilya
@@ -12,30 +13,27 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <myTags:head namePage="editUser"/>
-<fmt:setLocale value="${lang}"/>
-<fmt:setBundle basename="lang.messages"/>
-<fmt:message key="label.login" var="i18nLogin"/>
-<fmt:message key="label.password" var="i18nPassword"/>
-<fmt:message key="label.email" var="i18nEmail"/>
-
+<spring:message code="label.login" var="i18nLogin"/>
+<spring:message code="label.password" var="i18nPassword"/>
+<spring:message code="label.email" var="i18nEmail"/>
+<sec:authentication property="principal" var="authUser"/>
 <body>
 <div class="main">
-    <myTags:header login="${sessionLogin}"
-                   userLang="${lang}"
+    <myTags:header login="${authUser.username}"
                    mainLink="${contpath}welcome.jhtml"
                    userListLink="${contpath}listUsers.jhtml"
                    logoutLink="${contpath}logout.jhtml"
-                   roles="${roles}"/>
+                   roles="${authUser.authorities}"/>
     <div class="content">
         <form:form class="editForm" method="post" action="${contpath}edituser.jhtml" modelAttribute="user">
             <form:errors cssStyle="border:1px solid red" element="fieldset"/>
             <fieldset>
                 <legend>
                     <c:if test="${loginUser==null}">
-                        <p><fmt:message key="label.addUser"/> </p>
+                        <p><spring:message code="label.addUser"/> </p>
                     </c:if>
                     <c:if test="${loginUser!=null}">
-                        <p><fmt:message key="label.editUser"/> ${loginUser}</p>
+                        <p><spring:message code="label.editUser"/> ${loginUser}</p>
                     </c:if>
                 </legend>
                 <label>
@@ -52,7 +50,7 @@
 
                 </label>
                 <button type="submit" <c:if test="${loginUser!=null}"> name="loginUser" value="${loginUser}"</c:if>>
-                    <fmt:message key="label.acceptChanges"/>
+                    <spring:message code="label.acceptChanges"/>
                 </button>
             </fieldset>
         </form:form>

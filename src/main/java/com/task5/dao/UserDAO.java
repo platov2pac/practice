@@ -14,9 +14,10 @@ import java.util.List;
 public interface UserDAO {
     List<User> findAll() throws SQLException;
     User findByLogin(String login) throws SQLException;
+    User findByLoginWithoutPass(String login) throws SQLException;
     User findByLoginAndPassword(String login, String password) throws SQLException;
     void updatePassword(String login, String newPassword) throws SQLException;
-    void update(int user_id, String login, String newLogin, String email, String dob) throws SQLException;
+    void update(int user_id, String login, String newLogin,String newPassword, String email, String dob) throws SQLException;
     void delete(User user) throws SQLException;
     void create(User user) throws SQLException;
     void createRole(int user_id, List<Role> roles);

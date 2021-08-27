@@ -6,9 +6,9 @@
 <c:if test="${namePage=='login'}">
     <head>
         <title>Login</title>
-        <c:url var="contpath" value="/"/>
-        <link rel="stylesheet" href="${contpath}style/general.css"/>
-        <link rel="stylesheet" href="${contpath}style/login.css"/>
+        <c:url var="contpath" value="${pageContext.request.contextPath}"/>
+        <link rel="stylesheet" type="text/css" href="${contpath}/style/general.css" />
+        <link rel="stylesheet" type="text/css" href="${contpath}/style/login.css"/>
 
 <%--        <c:if test="${authFailed}">--%>
 <%--            <style>--%>

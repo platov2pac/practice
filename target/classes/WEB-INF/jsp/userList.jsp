@@ -1,5 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="myTags" tagdir="/WEB-INF/tags" %>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
 <%--
   Created by IntelliJ IDEA.
@@ -11,17 +13,18 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <myTags:head namePage="userList"/>
+<sec:authentication property="principal" var="authUser"/>
 <body>
 <div class="main">
-    <myTags:header login="${login}"
+    <myTags:header login="${authUser.username}"
                    mainLink="${contpath}welcome.jhtml"
                    userListLink="${contpath}listUsers.jhtml"
                    logoutLink="${contpath}logout.jhtml"
-                   roles="${roles}"/>
+                   roles="${authUser.authorities}"/>
     <div class="content">
         <table class="main-table">
             <caption>
-                <p>Список пользователей
+                <p><spring:message code="label.allUsers"/>
                     <a href="${contpath}edituser.jhtml">
                         <span class="material-icons"
                               style="color: black; font-size: 32px; height: 32px">person_add</span>
@@ -31,12 +34,10 @@
 
             <thead>
             <tr>
-                <th>
-                    <p>Логин</p>
-                </th>
-                <th><p>Роль</p></th>
-                <th><p>Почта</p></th>
-                <th><p>Дата рождения</p></th>
+                <th><p><spring:message code="label.login"/></p></th>
+                <th><p><spring:message code="label.role"/></p></th>
+                <th><p><spring:message code="label.email"/></p></th>
+                <th><p><spring:message code="label.dob"/></p></th>
             </tr>
             </thead>
             <tbody>

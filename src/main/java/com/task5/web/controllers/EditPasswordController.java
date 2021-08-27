@@ -2,6 +2,7 @@ package com.task5.web.controllers;
 
 import com.task5.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,11 +19,13 @@ import java.sql.SQLException;
 public class EditPasswordController {
     @Autowired
     private UserService userService;
+    @Autowired
+    private BCryptPasswordEncoder passwordEncoder;
 
    @PostMapping
-    protected String doPost(@RequestParam String newPassword, @SessionAttribute String login) throws ServletException, IOException {
+    protected String doPost(@RequestParam String newPassword, @RequestParam(name = "sessionLogin") String login) throws ServletException, IOException {
         try {
-            userService.updatePassword(login, newPassword);
+            userService.updatePassword(login,passwordEncoder.encode(newPassword));
         } catch (SQLException e) {
             e.printStackTrace();
         }

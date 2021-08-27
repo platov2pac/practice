@@ -4,6 +4,8 @@ import com.task5.dao.*;
 import com.task5.dto.Role;
 import com.task5.dto.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
@@ -31,6 +33,14 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public User findByLoginWithoutPass(String login) throws SQLException {
+        User user = userDAOBatis.findByLoginWithoutPass(login);
+        if (user != null) {
+            return user;
+        } else return null;
+    }
+
+    @Override
     public User findByLoginAndPassword(String login, String password) throws SQLException {
         User user = userDAOBatis.findByLoginAndPassword(login, password);
         if (user != null) {
@@ -44,10 +54,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public void update(int user_id, String login, String newLogin, String email, String dob, ArrayList<Role> roles) throws SQLException {
+    public void update(int user_id, String login, String newLogin,String newPassword,  String email, String dob, ArrayList<Role> roles) throws SQLException {
         userDAOBatis.deleteRole(findByLogin(login));
-        userDAOBatis.update(user_id, login, newLogin, email, dob);
-        userDAOBatis.createRole(user_id,roles);
+        userDAOBatis.update(user_id, login, newLogin,newPassword, email, dob);
+        userDAOBatis.createRole(user_id, roles);
 
     }
 
