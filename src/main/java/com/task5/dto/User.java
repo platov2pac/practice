@@ -71,12 +71,6 @@ public class User {
         return roles;
     }
 
-    public String getRoleName() {
-        return roles.stream()
-                .map(String::valueOf)
-                .collect(Collectors.joining(" "));
-    }
-
     public void setRoles(ArrayList<Role> roles) {
         this.roles = roles;
     }

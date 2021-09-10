@@ -3,6 +3,7 @@ package com.task5.services;
 import com.task5.dao.*;
 import com.task5.dto.Role;
 import com.task5.dto.User;
+import com.task5.services.errorsProcessing.NotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -27,25 +28,28 @@ public class UserServiceImpl implements UserService {
     @Override
     public User findByLogin(String login) throws SQLException {
         User user = userDAOBatis.findByLogin(login);
-        if (user != null) {
-            return user;
-        } else return null;
+        if (user == null) {
+            throw new NotFoundException();
+        }
+        return user;
     }
 
     @Override
     public User findByLoginWithoutPass(String login) throws SQLException {
         User user = userDAOBatis.findByLoginWithoutPass(login);
-        if (user != null) {
-            return user;
-        } else return null;
+        if (user == null) {
+            throw new NotFoundException();
+        }
+        return user;
     }
 
     @Override
     public User findByLoginAndPassword(String login, String password) throws SQLException {
         User user = userDAOBatis.findByLoginAndPassword(login, password);
-        if (user != null) {
-            return user;
-        } else return null;
+        if (user == null) {
+            throw new NotFoundException();
+        }
+        return user;
     }
 
     @Override

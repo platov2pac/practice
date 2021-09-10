@@ -4,22 +4,21 @@ import com.task5.dto.User;
 import com.task5.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
 import java.sql.SQLException;
 
-@Controller
+@RestController
 @RequestMapping("/deleteUser.jhtml")
+@CrossOrigin(origins = "http://localhost:4200")
 public class DeleteController {
 
     @Autowired
     private UserService userService;
 
     @GetMapping
-    protected String doGet(@RequestParam String deletableLogin) throws IOException {
+    protected void doGet(@RequestParam String deletableLogin) throws IOException {
         User deletableUser = null;
         try {
             deletableUser = userService.findByLogin(deletableLogin);
@@ -31,6 +30,5 @@ public class DeleteController {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return "redirect:/listUsers.jhtml";
     }
 }

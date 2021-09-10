@@ -34,7 +34,7 @@
             <input type="password" placeholder="${i18nPassword}" name="pass" class="${error}"/>
             <button type="submit">login</button>
             <div class="selectLang">
-                <a href="?lang=en">en</a>
+                <a href="lang?=en">en</a>
                 <a href="?lang=ru">ru</a>
             </div>
         </label>

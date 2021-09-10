@@ -28,18 +28,19 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .maximumSessions(1);
         http
                 .csrf().disable();
-        http.authorizeRequests()
-                .antMatchers("/", "/style/**").permitAll()
-                .antMatchers("/auth.jhtml").anonymous()
-                .antMatchers("/listUsers.jhtml").hasRole("ADMIN")
-                .anyRequest().authenticated();
+//                .httpBasic();
+//        http.authorizeRequests()
+//                .antMatchers("/", "/style/**").permitAll()
+//                .antMatchers("/login").anonymous()
+//                .antMatchers("/listUsers.jhtml").hasRole("ADMIN")
+//                .anyRequest().authenticated();
         http.formLogin()
-                .loginPage("/auth.jhtml")
+                //.loginPage("/auth.jhtml")
                 .loginProcessingUrl("/login")
                 .usernameParameter("login")
-                .passwordParameter("pass")
-                .defaultSuccessUrl("/welcome.jhtml")
-                .failureUrl("/auth.jhtml?error=true");
+                .passwordParameter("pass");
+                //.defaultSuccessUrl("/welcome.jhtml");
+                //.failureUrl("/auth.jhtml?error=true");
         http.logout()
                 .logoutUrl("/logout.jhtml")
                 .logoutSuccessUrl("/auth.jhtml")
@@ -55,4 +56,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         auth.userDetailsService(userService)
                 .passwordEncoder(bCryptPasswordEncoder);
     }
+
 }
