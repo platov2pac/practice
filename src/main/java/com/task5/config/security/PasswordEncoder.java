@@ -1,4 +1,4 @@
-package com.task5.security;
+package com.task5.config.security;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;

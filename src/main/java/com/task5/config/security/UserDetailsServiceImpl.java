@@ -1,4 +1,4 @@
-package com.task5.security;
+package com.task5.config.security;
 
 import com.task5.dao.UserDAO;
 import com.task5.dto.User;
@@ -12,9 +12,7 @@ import org.springframework.stereotype.Service;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
