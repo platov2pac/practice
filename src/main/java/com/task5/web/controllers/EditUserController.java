@@ -3,6 +3,8 @@ package com.task5.web.controllers;
 import com.task5.dto.Role;
 import com.task5.dto.User;
 import com.task5.services.UserService;
+import com.task5.services.errorsProcessing.EditUserException;
+import com.task5.services.errorsProcessing.NotFoundException;
 import com.task5.services.validators.EditUserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -45,14 +47,15 @@ public class EditUserController {
     @PostMapping
     protected void doPost(@RequestBody User user, @RequestParam(required = false) String loginUser, BindingResult bindingResult
     ) {
-        editUserValidator.validate(user, bindingResult);
-        if (bindingResult.hasErrors()) {
-            // return "/editUser";
-        }
+
         List<Role> userRoles = new ArrayList<>();
         user.getRoles().forEach(role -> {
             userRoles.add(new Role(role.getName()));
         });
+        editUserValidator.validate(user, bindingResult);
+        if (bindingResult.hasErrors()) {
+            throw new EditUserException();
+        }
         if (loginUser != null) {
             try {
                 User userForUserId = userService.findByLogin(loginUser);

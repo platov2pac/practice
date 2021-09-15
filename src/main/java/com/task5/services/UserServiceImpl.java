@@ -29,7 +29,8 @@ public class UserServiceImpl implements UserService {
     public User findByLogin(String login) throws SQLException {
         User user = userDAOBatis.findByLogin(login);
         if (user == null) {
-            throw new NotFoundException();
+            return null;
+//            throw new NotFoundException();
         }
         return user;
     }

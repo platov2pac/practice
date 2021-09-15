@@ -9,20 +9,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="security in process">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/task5/config/security/jwt/JwtFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/task5/config/security/jwt/JwtProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/forms/AuthResponse.java" afterDir="false" />
+    <list default="true" id="613767fe-31ed-4941-a333-a52416e95dd0" name="Default Changelist" comment="изменил структуру + добавил создание токена + теперь реквесты не будут работать без токена&#10;&lt;З&lt;З&lt;З&lt;З">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/errorsProcessing/EditUserException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/errorsProcessing/UnauthorizedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/security/PasswordEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/config/security/PasswordEncoder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/security/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/config/security/UserDetailsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/config/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/config/WebMvcConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/config/security/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/config/security/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/config/security/jwt/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/config/security/jwt/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/config/security/jwt/JwtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/config/security/jwt/JwtProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/services/errorsProcessing/MyExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/errorsProcessing/MyExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/services/validators/EditUserValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/services/validators/EditUserValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/services/validators/UserRolesValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/controllers/EditPasswordController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/controllers/EditUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/controllers/EditUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/filter/Abth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/filter/Access.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/task5/web/forms/AuthResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/task5/web/forms/AuthResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/editUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/userList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/head.tag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/tags/header.tag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/editUser.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/general.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/userList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/welcome.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/editUser.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/login.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/userList.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/jsp/welcome.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/tags/head.tag" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WEB-INF/tags/header.tag" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/task5/services/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/task5/services/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/task_5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/task_5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/task5/web/filter/Abth.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/task5/web/filter/Access.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/style/editUser.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/style/general.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/style/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/style/userList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/style/welcome.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -457,7 +489,9 @@
       <workItem from="1631106122587" duration="1601000" />
       <workItem from="1631168561571" duration="12899000" />
       <workItem from="1631254720308" duration="18195000" />
-      <workItem from="1631513931493" duration="12357000" />
+      <workItem from="1631513931493" duration="14190000" />
+      <workItem from="1631598818386" duration="14777000" />
+      <workItem from="1631687500844" duration="16757000" />
     </task>
     <task id="LOCAL-00001" summary="подправил роли, фильтры и тд&#10;нужно доделать теги + get...()">
       <created>1628068192698</created>
@@ -613,7 +647,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631283858543</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="изменил структуру + добавил создание токена + теперь реквесты не будут работать без токена&#10;&lt;З&lt;З&lt;З&lt;З">
+      <created>1631534659912</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1631534659912</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -643,7 +684,8 @@
     <MESSAGE value="i18n in placeholder" />
     <MESSAGE value="next spring security" />
     <MESSAGE value="security in process" />
-    <option name="LAST_COMMIT_MESSAGE" value="security in process" />
+    <MESSAGE value="изменил структуру + добавил создание токена + теперь реквесты не будут работать без токена&#10;&lt;З&lt;З&lt;З&lt;З" />
+    <option name="LAST_COMMIT_MESSAGE" value="изменил структуру + добавил создание токена + теперь реквесты не будут работать без токена&#10;&lt;З&lt;З&lt;З&lt;З" />
   </component>
   <component name="XDebuggerManager">
     <pin-to-top-manager>
@@ -659,9 +701,6 @@
         <watch expression="roles" language="JAVA" />
         <watch expression="user.getRoleName().split(&quot; &quot;)" language="JAVA" />
         <watch expression="userService.findAll()" language="JAVA" />
-      </configuration>
-      <configuration name="SpringBootApplicationConfigurationType">
-        <watch expression="passwordEncoder.encode(loginForm.password)" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

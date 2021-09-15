@@ -33,15 +33,15 @@ public class LoginController {
     @PostMapping
     public AuthResponse doPost(@RequestBody LoginForm loginForm,
                                BindingResult bindingResult) {
-//        loginValidator.validate(loginForm, bindingResult);
-//        if (bindingResult.hasErrors()) {
-//            throw new NotFoundException();
-//        }
+        loginValidator.validate(loginForm, bindingResult);
+        if (bindingResult.hasErrors()) {
+            throw new NotFoundException();
+        }
         User user;
         try {
             user = userService.findByLogin(loginForm.getLogin());
             if (passwordEncoder.matches(loginForm.getPassword(), user.getPassword())) {
-                return new AuthResponse(jwtProvider.generateToken(user.getLogin()));
+                return new AuthResponse(jwtProvider.generateToken(user.getLogin()), user.getLogin(), user.getRoles());
             } else {
                 throw new NotFoundException();
             }
